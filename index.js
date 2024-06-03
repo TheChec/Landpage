@@ -1,3 +1,5 @@
+window.sr = ScrollReveal();
+
 window.addEventListener('load', () => {
     let modal = document.getElementById('charging')
     let circle = document.getElementById('onsize')
@@ -15,7 +17,37 @@ window.addEventListener('load', () => {
         
     setTimeout(() => {
         modal.style.display = 'none'
+        sr.reveal('.portada', {
+            duration: 3000,
+            origin: 'bottom',
+            distance: '-100px',
+        });
+        sr.reveal('.tech', {
+            duration: 2000,
+            origin: 'right',
+            distance: '-150px',
+            reset: true,
+    
+        });
+        sr.reveal('.port', {
+            duration: 2000,
+            origin: 'right',
+            distance: '-150px',
+            reset: true,
+    
+        });
+        sr.reveal('.parti', {
+            duration: 2000,
+            origin: 'right',
+            distance: '-150px',
+            reset: true,
+    
+        });
     }, 2500)
+
+
+
+    
 })
 nav.style.transition = 'transform 1s ease'
 
