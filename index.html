@@ -12,16 +12,23 @@
 </head>
 
 <body>
+    <div class="boxModal" id="ICPC">
+        <div class="Modal">
+            <div class="Close">
+                <span onclick="modalsClose('ICPC')" class="material-symbols-outlined">close</span>
+            </div>
+            <h2>ICPC - 2021</h2>
+            <img class="Certified" src="./assets/CertificadoICPC.PNG" alt="">
+        </div>
+    </div>
     <div class="boxModal" id="PoliNet">
         <div class="Modal">
             <div class="Close">
-                <span onclick="modalsClose('PoliNet')" class="material-symbols-outlined">
-                    close</span>
+                <span onclick="modalsClose('PoliNet')" class="material-symbols-outlined">close</span>
             </div>
             <h2>PoliNet</h2>
             <video src="./assets/polinet-preview.mp4" type="video/mp4" autoplay="true" muted="true"
             loop="true"></video>
-            <a href="https://polinet.vercel.app/">Enlace a la pagina aquí</a>
             <p>Proyecto orientado para emprendedores, mentores y usuarios del común. Es una red social donde se puede publicar, reaccionar e interectuar con otros.</p>
             <h3>Tecnologías</h3>
             <div class="techIconInProjects">
@@ -38,7 +45,7 @@
                 <span onclick="modalsClose('CreditCar')" class="material-symbols-outlined">close</span>
             </div>
             <h2>CreditCar</h2>
-            <video src="./assets/polinet-preview.mp4" type="video/mp4" autoplay="true" muted="true"
+            <video src="./assets/creditcar-preview.mp4" type="video/mp4" autoplay="true" muted="true"
             loop="true"></video>
             <p>Una plataforma en EE. UU. permite a concesionarios publicar vehículos y a usuarios registrados verificar su elegibilidad para financiación y encontrar concesionarios con mejor afinidad financiera.</p>
             <h3>Tecnologías</h3>
@@ -56,9 +63,9 @@
                 <span onclick="modalsClose('Algebraic-Showdown')" class="material-symbols-outlined">close</span>
             </div>
             <h2>Algebraic-Showdown</h2>
-            <video src="./assets/polinet-preview.mp4" type="video/mp4" autoplay="true" muted="true"
+            <video src="./assets/algebraic-showdown-preview.mp4" type="video/mp4" autoplay="true" muted="true"
             loop="true"></video>
-            <a href="thechec.github.io/Algebraic-Showdown/">Enlace a la pagina aquí</a>
+            <a href="https://thechec.github.io/Algebraic-Showdown/">Enlace a la pagina aquí</a>
             <p>Juego de Algebra lineal combinado con piedra papel y tijera, en el que tendras que solucionar matrices por metodos como el de Sarrus y Cramer.</p>
             <h3>Tecnologías</h3>
             <div class="techIconInProjects">
@@ -74,9 +81,9 @@
                 <span onclick="modalsClose('ResisTool')" class="material-symbols-outlined">close</span>
             </div>
             <h2>ResisTool</h2>
-            <video src="./assets/polinet-preview.mp4" type="video/mp4" autoplay="true" muted="true"
+            <video src="./assets/resistool-preview.mp4" type="video/mp4" autoplay="true" muted="true"
             loop="true"></video>
-            <a href="https://github.com/TheChec/ResisTool.git">Enlace a la pagina aquí</a>
+            <a href="https://thechec.github.io/ResisTool/">Enlace a la pagina aquí</a>
             <p>Esta calculadora está diseñada para ayudarte a determinar la resistencia total y la capacitancia total en circuitos en serie y paralelo, facilitando el diseño y análisis de tus circuitos eléctricos.</p>
             <h3>Tecnologías</h3>
             <div class="techIconInProjects">
@@ -106,6 +113,7 @@
             <a class="buttonLink" href="#start">Inicio</a>
             <a class="buttonLink" href="#habilities">Habilidades</a>
             <a class="buttonLink" href="#port">Portafolio</a>
+            <a class="buttonLink" href="#parti">Participaciones</a>
         </div>
     </nav>
     <section class="portada" id="start">
@@ -136,7 +144,7 @@
                         <div class="spaceLevels">
                             <div class="boxlevelUp"></div>
                             <div class="boxlevelUp"></div>
-                            <div class="boxlevelDown"></div>
+                            <div class="boxlevelUp"></div>
                             <div class="boxlevelDown"></div>
                             <div class="boxlevelDown"></div>
                         </div>
@@ -288,7 +296,7 @@
             <div>
                 <h2 class="subHabilities">Proyectos destacables</h2>
             </div>
-            <div class="cardTechSection">
+            <div class="cardTechSectionPort">
                 <a onclick="modalsOpen('PoliNet')" class="cardPort">
                     <div class="preview">
                         <img src="./assets/logoPolinet.png" alt="">
@@ -351,6 +359,33 @@
                             <img src="./assets/cssIcon.png" alt="">
                             <img src="./assets/jsIcon.png" alt="">
                         </div>
+                    </div>
+                </a>
+            </div>
+        </section>
+        <section class="Habilities">
+            <div class="Habilities-title" id="parti">
+                <h2>Participaciones</h2>
+            </div>
+            <div class="cardTechSectionPort">
+                <a onclick="modalsOpen('ICPC')" class="cardPort">
+                    <div class="preview">
+                        <img src="./assets/ICPC.png" alt="">
+                    </div>
+                    <div>
+                        <h3>ICPC - 2021</h3>
+                        <p>Maraton nacional de programación en representación
+                            <br> del Politécnico Grancolombiano</p>
+                    </div>
+                </a>
+                <a class="cardPort" style="cursor:initial ;">
+                    <div class="preview">
+                        <img src="./assets/Expoingenieria-2023.png" alt="">
+                    </div>
+                    <div>
+                        <h3>Hack_Challenge Expoingeniería - 2023</h3>
+                        <p>Evento departamental en el que quedé de segundo
+                            lugar en la categoría de diseño web</p>
                     </div>
                 </a>
             </div>

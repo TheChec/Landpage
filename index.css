@@ -212,12 +212,23 @@ p{
 }
 
 .cardTechSection{
+    width: 80%;
+    /*display: flex;
+    flex-flow:  row wrap;
+    justify-content: center;*/
+    display: grid;
+    grid-template-columns:  repeat(auto-fill, minmax(300px, 1fr));
+    margin: 0 auto;
+    gap: 30px;
+    padding: 25px 0;
+}
+.cardTechSectionPort{
     width: 100%;
     display: flex;
     flex-flow:  row wrap;
-    gap: 30px;
     justify-content: center;
-    align-items: stretch;
+    margin: 0 auto;
+    gap: 30px;
     padding: 25px 0;
 }
 .subHabilities{
@@ -374,9 +385,13 @@ p{
 .Modal a{
     margin: 20px 0;
 }
-.Modal video{
+.Modal video, .Certified{
     margin: 0 60px;
+    border-radius: 25px;
     width: clamp(350px,50vw,500px);
+}
+.Certified{
+    margin-bottom: 30px;
 }
 .openModal{
     display: flex;
