@@ -369,8 +369,11 @@ p{
     text-align: center;
     display: none;
 }
-.Modal h2, .Modal h3, .Modal p{
+.Modal h2, .Modal h3, .Modal p, .Modal a{
     color: var(--b1);
+}
+.Modal a{
+    margin: 20px 0;
 }
 .Modal video{
     margin: 0 60px;
