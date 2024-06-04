@@ -184,7 +184,7 @@ p{
 .linksApps img{
     object-fit: cover;
     width: 30px;
-    margin-right: 10px;
+    margin: 10px;
 }
 .portada p{
     width: 500px;
