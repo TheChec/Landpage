@@ -23,13 +23,14 @@
         </div>
     </div>
     <div class="boxModal" id="PoliNet">
-        <div class="Modal">
+        <div class="Modal" id="BoxPolinet">
             <div class="Close">
-                <span onclick="modalsClose('PoliNet')" class="material-symbols-outlined">close</span>
+                <span onclick="modalsClose('PoliNet', 'BoxPolinet')" class="material-symbols-outlined">close</span>
             </div>
             <h2>PoliNet</h2>
             <video src="./assets/polinet-preview.mp4" type="video/mp4" autoplay="true" muted="true"
             loop="true"></video>
+            <a href="https://polinet.vercel.app/">Enlace a la pagina aquí</a>
             <p>Proyecto orientado para emprendedores, mentores y usuarios del común. Es una red social donde se puede publicar, reaccionar e interectuar con otros.</p>
             <h3>Tecnologías</h3>
             <div class="techIconInProjects">
@@ -41,9 +42,9 @@
         </div>
     </div>
     <div class="boxModal" id="CreditCar">
-        <div class="Modal">
+        <div class="Modal" id="Boxcreditcar">
             <div class="Close">
-                <span onclick="modalsClose('CreditCar')" class="material-symbols-outlined">close</span>
+                <span onclick="modalsClose('CreditCar','Boxcreditcar')" class="material-symbols-outlined">close</span>
             </div>
             <h2>CreditCar</h2>
             <video src="./assets/creditcar-preview.mp4" type="video/mp4" autoplay="true" muted="true"
@@ -59,9 +60,9 @@
         </div>
     </div>
     <div class="boxModal" id="Algebraic-Showdown">
-        <div class="Modal">
+        <div class="Modal" id="BoxAlgebraic-Showdown">
             <div class="Close">
-                <span onclick="modalsClose('Algebraic-Showdown')" class="material-symbols-outlined">close</span>
+                <span onclick="modalsClose('Algebraic-Showdown', 'BoxAlgebraic-Showdown')" class="material-symbols-outlined">close</span>
             </div>
             <h2>Algebraic-Showdown</h2>
             <video src="./assets/algebraic-showdown-preview.mp4" type="video/mp4" autoplay="true" muted="true"
@@ -77,9 +78,9 @@
         </div>
     </div>
     <div class="boxModal" id="ResisTool">
-        <div class="Modal">
+        <div class="Modal" id="BoxResisTool">
             <div class="Close">
-                <span onclick="modalsClose('ResisTool')" class="material-symbols-outlined">close</span>
+                <span onclick="modalsClose('ResisTool', 'BoxResisTool')" class="material-symbols-outlined">close</span>
             </div>
             <h2>ResisTool</h2>
             <video src="./assets/resistool-preview.mp4" type="video/mp4" autoplay="true" muted="true"
@@ -120,11 +121,11 @@
     <section class="portada" id="start">
         <video src="./assets/204635-925250848_small.mp4" type="video/mp4" autoplay="true" muted="true"
             loop="true"></video>
-        <h1>Sergio Calderon</h1>
-        <h3>Desarrollador de software</h3>
-        <p>Soy un programador, autodidacta, tolerante y colaborativo. Me gusta trabajar en equipo y soy abierto con mis
+        <h1 class="titles">Sergio Calderon</h1>
+        <h3 class="titles">Desarrollador de software</h3>
+        <p  class="titles">Soy un programador, autodidacta, tolerante y colaborativo. Me gusta trabajar en equipo y soy abierto con mis
             compañeros.</p>
-        <div class="linksApps">
+        <div class="linksApps" class="titles">
             <img src="./assets/githubIcon.png" alt="">
             <a href="https://github.com/TheChec">Github</a>
         </div>
@@ -138,45 +139,6 @@
                 <h2 class="subHabilities">Teconologías</h2>
             </div>
             <div class="cardTechSection">
-                <div class="cardTech tech">
-                    <div><img src="./assets/pythonIcon.png" alt=""></div>
-                    <div class="Levels">
-                        <p>Python</p>
-                        <div class="spaceLevels">
-                            <div class="boxlevelUp"></div>
-                            <div class="boxlevelUp"></div>
-                            <div class="boxlevelUp"></div>
-                            <div class="boxlevelDown"></div>
-                            <div class="boxlevelDown"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="cardTech tech">
-                    <div><img src="./assets/jsIcon.png" alt=""></div>
-                    <div class="Levels">
-                        <p>JavaScript</p>
-                        <div class="spaceLevels">
-                            <div class="boxlevelUp"></div>
-                            <div class="boxlevelUp"></div>
-                            <div class="boxlevelUp"></div>
-                            <div class="boxlevelUp"></div>
-                            <div class="boxlevelDown"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="cardTech tech">
-                    <div><img src="./assets/javaIcon.png" alt=""></div>
-                    <div class="Levels">
-                        <p>Java</p>
-                        <div class="spaceLevels">
-                            <div class="boxlevelUp"></div>
-                            <div class="boxlevelUp"></div>
-                            <div class="boxlevelUp"></div>
-                            <div class="boxlevelDown"></div>
-                            <div class="boxlevelDown"></div>
-                        </div>
-                    </div>
-                </div>
                 <div class="cardTech tech">
                     <div><img src="./assets/htmlIcon.png" alt=""></div>
                     <div class="Levels">
@@ -199,6 +161,45 @@
                             <div class="boxlevelUp"></div>
                             <div class="boxlevelUp"></div>
                             <div class="boxlevelUp"></div>
+                            <div class="boxlevelDown"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cardTech tech">
+                    <div><img src="./assets/jsIcon.png" alt=""></div>
+                    <div class="Levels">
+                        <p>JavaScript</p>
+                        <div class="spaceLevels">
+                            <div class="boxlevelUp"></div>
+                            <div class="boxlevelUp"></div>
+                            <div class="boxlevelUp"></div>
+                            <div class="boxlevelUp"></div>
+                            <div class="boxlevelDown"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cardTech tech">
+                    <div><img src="./assets/pythonIcon.png" alt=""></div>
+                    <div class="Levels">
+                        <p>Python</p>
+                        <div class="spaceLevels">
+                            <div class="boxlevelUp"></div>
+                            <div class="boxlevelUp"></div>
+                            <div class="boxlevelUp"></div>
+                            <div class="boxlevelDown"></div>
+                            <div class="boxlevelDown"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cardTech tech">
+                    <div><img src="./assets/javaIcon.png" alt=""></div>
+                    <div class="Levels">
+                        <p>Java</p>
+                        <div class="spaceLevels">
+                            <div class="boxlevelUp"></div>
+                            <div class="boxlevelUp"></div>
+                            <div class="boxlevelUp"></div>
+                            <div class="boxlevelDown"></div>
                             <div class="boxlevelDown"></div>
                         </div>
                     </div>
@@ -298,7 +299,7 @@
                 <h2 class="subHabilities">Proyectos destacables</h2>
             </div>
             <div class="cardTechSectionPort">
-                <a onclick="modalsOpen('PoliNet')" class="cardPort port">
+                <a onclick="modalsOpen('PoliNet', 'BoxPolinet')" class="cardPort port">
                     <div class="preview">
                         <img src="./assets/logoPolinet.png" alt="">
                     </div>
@@ -314,7 +315,7 @@
                         </div>
                     </div>
                 </a>
-                <a onclick="modalsOpen('CreditCar')" class="cardPort port">
+                <a onclick="modalsOpen('CreditCar', 'Boxcreditcar')" class="cardPort port">
                     <div class="preview">
                         <img src="./assets/angularIcon.png" alt="">
                     </div>
@@ -331,7 +332,7 @@
                         </div>
                     </div>
                 </a>
-                <a onclick="modalsOpen('Algebraic-Showdown')" class="cardPort port">
+                <a onclick="modalsOpen('Algebraic-Showdown', 'BoxAlgebraic-Showdown')" class="cardPort port">
                     <div class="preview">
                         <img src="./assets/Hand-scissor.svg" alt="">
                     </div>
@@ -346,7 +347,7 @@
                         </div>
                     </div>
                 </a>
-                <a onclick="modalsOpen('ResisTool')" class="cardPort port">
+                <a onclick="modalsOpen('ResisTool', 'BoxResisTool')" class="cardPort port">
                     <div class="preview">
                         <img src="./assets/resistence_logo.png" alt="">
                     </div>

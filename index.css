@@ -1,4 +1,6 @@
-
+html{
+    scroll-behavior: smooth;
+}
 /**   Modal cargando  */
 .divModalCharge{
     position: fixed;
@@ -164,6 +166,9 @@ nav {
     font-weight: bold;
 	text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
 }
+h2{
+	text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+}
 p{
     margin: 0;
 }
@@ -173,6 +178,8 @@ p{
     align-items: center;
     flex-direction: row;
     margin: 50px;
+    box-sizing: border-box;
+    overflow: hidden;
 }
 .linksApps img{
     object-fit: cover;
@@ -310,7 +317,7 @@ p{
 }
 .cardPort:hover{
     border: 2px var(--w) solid;
-    box-shadow: 0 0 10px 10px rgba(255, 255, 255, 0.3);
+    box-shadow: 0 0 10px 10px rgba(255, 255, 255, 0.8);
     transition: box-shadow .2s ease;
 }
 
@@ -380,18 +387,41 @@ p{
     color: var(--b1);
 }
 .Modal a{
-    margin: 20px 0;
+    margin: 20px 0 0 0;
 }
 .Modal video, .Certified{
     margin: 0 60px;
     border-radius: 25px;
-    width: clamp(350px,50vw,500px);
+    width: clamp(310px,50vw,500px);
 }
 .Certified{
     margin-bottom: 30px;
 }
 .openModal{
     display: flex;
+}
+
+
+@keyframes UpModal {
+    0%{
+        transform: translateY(-1000px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+@keyframes downModal {
+    0%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+    100%{
+        transform: translateY(-1000px);
+        opacity: 0;
+        
+    }
 }
 @media screen and (max-width: 800px) {
     .emptyBox{
@@ -402,6 +432,8 @@ p{
     }
     .Modal p{
         display: block;
+        margin: 20px 0 10px 0;
+
     }
   }
 @media screen and (max-width: 600px) {
@@ -414,7 +446,7 @@ p{
     .portada p{
         width: 250px;
     }
-    video{
+    .portada video{
         height: 100%;
     }
     .Habilities{
@@ -425,5 +457,6 @@ p{
     }
     .Modal p{
         display: block;
+        margin: 20px 0 10px 0;
     }
   }

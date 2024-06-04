@@ -22,35 +22,43 @@ window.addEventListener('load', () => {
             origin: 'bottom',
             distance: '-100px',
         });
-        sr.reveal('.tech', {
-            duration: 2000,
-            origin: 'right',
-            distance: '-150px',
-            reset: true,
-    
-        });
-        sr.reveal('.port', {
-            duration: 2000,
-            origin: 'right',
-            distance: '-150px',
-            reset: true,
-    
-        });
-        sr.reveal('.parti', {
-            duration: 2000,
-            origin: 'right',
-            distance: '-150px',
-            reset: true,
-    
-        });
     }, 2500)
 
-
-
-    
 })
-nav.style.transition = 'transform 1s ease'
 
+sr.reveal('.titles', {
+    duration: 2000,
+    origin: 'top',
+    distance: '-150px',
+    reset: true
+})
+sr.reveal('.linksApps', {
+    duration: 2000,
+    origin: 'top',
+    distance: '-150px',
+    reset: true
+})
+sr.reveal('.tech', {
+    duration: 2000,
+    origin: 'right',
+    distance: '-150px',
+    reset: true,
+
+});
+sr.reveal('.port', {
+    duration: 2000,
+    origin: 'right',
+    distance: '-150px',
+    reset: true,
+
+});
+sr.reveal('.parti', {
+    duration: 2000,
+    origin: 'right',
+    distance: '-150px',
+    reset: true,
+
+});
 
 var contador = 0;
 
@@ -76,15 +84,25 @@ function clickNavbarCellphone(){
     }
 }
 
-function modalsOpen(id){
-    let modals = document.querySelectorAll(`#${id}`)
+function modalsOpen(id, idBoxModal){
+    let modals = document.querySelectorAll(`#${id}`);
+    let modalsAnimation = document.querySelectorAll(`#${idBoxModal}`);
     modals.forEach(modal => {
-        modal.classList.add('openModal')
+        modal.classList.add('openModal');
+    })
+    modalsAnimation.forEach(modal => {
+        modal.style.animation = 'UpModal 1s ease';
     })
 }
-function modalsClose(id){
+function modalsClose(id, idBoxModal){
     let modals = document.querySelectorAll(`#${id}`)
-    modals.forEach(modal => {
-        modal.classList.remove('openModal')
+    let modalsAnimation = document.querySelectorAll(`#${idBoxModal}`);
+    modalsAnimation.forEach(modal => {
+        modal.style.animation = 'downModal 1s ease';
     })
+    setTimeout(() => {
+        modals.forEach(modal => {
+            modal.classList.remove('openModal');
+        })
+    },500)
 }
