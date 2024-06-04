@@ -212,13 +212,10 @@ p{
 }
 
 .cardTechSection{
-    width: 80%;
-    /*display: flex;
-    flex-flow:  row wrap;
-    justify-content: center;*/
+    width: 100%;
     display: grid;
+    justify-items: center;
     grid-template-columns:  repeat(auto-fill, minmax(300px, 1fr));
-    margin: 0 auto;
     gap: 30px;
     padding: 25px 0;
 }
@@ -300,7 +297,7 @@ p{
 .cardPort{
     box-shadow: 0 0 10px 2px rgba(255, 255, 255, 0.8);
     height: clamp(150px, 30vw, 200px);
-    width: clamp(300px, 50vw, 590px);
+    width: clamp(280px, 50vw, 590px);
     border-radius: 15px;
     border: 2px transparent solid;
     display: flex;
