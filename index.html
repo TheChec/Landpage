@@ -13,16 +13,16 @@
 </head>
 
 <body>
-    <div class="boxModal" id="ICPC">
-        <div class="Modal">
+    <div class="boxModal" id="ICPC" onclick="modalsClose('ICPC', 'BoxICPC')" >
+        <div class="Modal" id="BoxICPC">
             <div class="Close">
-                <span onclick="modalsClose('ICPC')" class="material-symbols-outlined">close</span>
+                <span onclick="modalsClose('ICPC', 'BoxICPC')" class="material-symbols-outlined">close</span>
             </div>
             <h2>ICPC - 2021</h2>
             <img class="Certified" src="./assets/CertificadoICPC.PNG" alt="">
         </div>
     </div>
-    <div class="boxModal" id="PoliNet">
+    <div class="boxModal" id="PoliNet" onclick="modalsClose('PoliNet', 'BoxPolinet')">
         <div class="Modal" id="BoxPolinet">
             <div class="Close">
                 <span onclick="modalsClose('PoliNet', 'BoxPolinet')" class="material-symbols-outlined">close</span>
@@ -41,7 +41,7 @@
             </div>
         </div>
     </div>
-    <div class="boxModal" id="CreditCar">
+    <div class="boxModal" id="CreditCar" onclick="modalsClose('CreditCar','Boxcreditcar')">
         <div class="Modal" id="Boxcreditcar">
             <div class="Close">
                 <span onclick="modalsClose('CreditCar','Boxcreditcar')" class="material-symbols-outlined">close</span>
@@ -59,7 +59,7 @@
             </div>
         </div>
     </div>
-    <div class="boxModal" id="Algebraic-Showdown">
+    <div class="boxModal" id="Algebraic-Showdown" onclick="modalsClose('Algebraic-Showdown', 'BoxAlgebraic-Showdown')">
         <div class="Modal" id="BoxAlgebraic-Showdown">
             <div class="Close">
                 <span onclick="modalsClose('Algebraic-Showdown', 'BoxAlgebraic-Showdown')" class="material-symbols-outlined">close</span>
@@ -77,7 +77,7 @@
             </div>
         </div>
     </div>
-    <div class="boxModal" id="ResisTool">
+    <div class="boxModal" id="ResisTool" onclick="modalsClose('ResisTool', 'BoxResisTool')">
         <div class="Modal" id="BoxResisTool">
             <div class="Close">
                 <span onclick="modalsClose('ResisTool', 'BoxResisTool')" class="material-symbols-outlined">close</span>
@@ -95,7 +95,7 @@
             </div>
         </div>
     </div>
-    <div class="boxModal" id="Instalamos">
+    <div class="boxModal" id="Instalamos" onclick="modalsClose('Instalamos', 'BoxInstalamos')">
         <div class="Modal" id="BoxInstalamos">
             <div class="Close">
                 <span onclick="modalsClose('Instalamos', 'BoxInstalamos')" class="material-symbols-outlined">close</span>
@@ -115,7 +115,6 @@
         </div>
     </div>
 
-
     <div class="divModalCharge" id="charging">
         <div class="circle" id="movein"></div>
         <div class="circle2" id="onsize"></div>
@@ -127,13 +126,13 @@
     <nav id="nav">
         <div class="inNav">
             <img onclick="clickNavbarCellphone()" class="navigator2" id="buttonNavigator"
-                src="./assets/navigatorIconRelative.png" alt="">
+        src="./assets/navigatorIconRelative.png" alt="">
         </div>
         <div class="buttonsNav" id="buttonsNavBar">
-            <a class="buttonLink" href="#start">Inicio</a>
-            <a class="buttonLink" href="#habilities">Habilidades</a>
-            <a class="buttonLink" href="#port">Portafolio</a>
-            <a class="buttonLink" href="#parti">Participaciones</a>
+            <a class="buttonLink" href="#start" onclick="clickNavbarCellphone()">Inicio</a>
+            <a class="buttonLink" href="#habilities" onclick="clickNavbarCellphone()">Habilidades</a>
+            <a class="buttonLink" href="#port" onclick="clickNavbarCellphone()">Portafolio</a>
+            <a class="buttonLink" href="#parti" onclick="clickNavbarCellphone()">Participaciones</a>
         </div>
     </nav>
     <section class="portada" id="start">
@@ -152,160 +151,180 @@
             <div class="Habilities-title" id="habilities">
                 <h2>Habilidades</h2>
             </div>
-            <div>
-                <h2 class="subHabilities">Teconologías</h2>
-            </div>
-            <div class="cardTechSection">
-                <div class="cardTech tech">
-                    <div><img src="./assets/htmlIcon.png" alt=""></div>
-                    <div class="Levels">
-                        <p>Html</p>
-                        <div class="spaceLevels">
-                            <div class="boxlevelUp"></div>
-                            <div class="boxlevelUp"></div>
-                            <div class="boxlevelUp"></div>
-                            <div class="boxlevelUp"></div>
-                            <div class="boxlevelDown"></div>
+            <div class="ContentAllHabilities">
+                <div>
+                    <div>
+                        <h2 class="subHabilities">Teconologías</h2>
+                    </div>
+                    <div class="cardTechSection">
+                        <div class="cardTech tech">
+                            <div><img src="./assets/htmlIcon.png" alt=""></div>
+                            <div class="Levels">
+                                <p>Html</p>
+                                <div class="spaceLevels">
+                                    <div class="boxlevelUp"></div>
+                                    <div class="boxlevelUp"></div>
+                                    <div class="boxlevelUp"></div>
+                                    <div class="boxlevelUp"></div>
+                                    <div class="boxlevelDown"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cardTech tech">
+                            <div><img src="./assets/cssIcon.png" alt=""></div>
+                            <div class="Levels">
+                                <p>Css</p>
+                                <div class="spaceLevels">
+                                    <div class="boxlevelUp"></div>
+                                    <div class="boxlevelUp"></div>
+                                    <div class="boxlevelUp"></div>
+                                    <div class="boxlevelUp"></div>
+                                    <div class="boxlevelDown"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cardTech tech">
+                            <div><img src="./assets/jsIcon.png" alt=""></div>
+                            <div class="Levels">
+                                <p>JavaScript</p>
+                                <div class="spaceLevels">
+                                    <div class="boxlevelUp"></div>
+                                    <div class="boxlevelUp"></div>
+                                    <div class="boxlevelUp"></div>
+                                    <div class="boxlevelUp"></div>
+                                    <div class="boxlevelDown"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cardTech tech">
+                            <div><img src="./assets/pythonIcon.png" alt=""></div>
+                            <div class="Levels">
+                                <p>Python</p>
+                                <div class="spaceLevels">
+                                    <div class="boxlevelUp"></div>
+                                    <div class="boxlevelUp"></div>
+                                    <div class="boxlevelUp"></div>
+                                    <div class="boxlevelDown"></div>
+                                    <div class="boxlevelDown"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cardTech tech">
+                            <div><img src="./assets/javaIcon.png" alt=""></div>
+                            <div class="Levels">
+                                <p>Java</p>
+                                <div class="spaceLevels">
+                                    <div class="boxlevelUp"></div>
+                                    <div class="boxlevelUp"></div>
+                                    <div class="boxlevelUp"></div>
+                                    <div class="boxlevelDown"></div>
+                                    <div class="boxlevelDown"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cardTech emptyBox"></div>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <h2 class="subHabilities">Herramientas de desarrollo</h2>
+                    </div>
+                    <div class="cardTechSection">
+                        <div class="cardTech tech">
+                            <div><img src="./assets/angularIcon.png" alt=""></div>
+                            <div class="Levels">
+                                <p>Angular</p>
+                                <div class="spaceLevels">
+                                    <div class="boxlevelUp"></div>
+                                    <div class="boxlevelUp"></div>
+                                    <div class="boxlevelUp"></div>
+                                    <div class="boxlevelUp"></div>
+                                    <div class="boxlevelDown"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cardTech tech">
+                            <div><img src="./assets/nodejsIcon.png" alt=""></div>
+                            <div class="Levels">
+                                <p>NodeJs</p>
+                                <div class="spaceLevels">
+                                    <div class="boxlevelUp"></div>
+                                    <div class="boxlevelUp"></div>
+                                    <div class="boxlevelUp"></div>
+                                    <div class="boxlevelDown"></div>
+                                    <div class="boxlevelDown"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cardTech tech">
+                            <div><img src="./assets/expressIcon.png" alt=""></div>
+                            <div class="Levels">
+                                <p>Express</p>
+                                <div class="spaceLevels">
+                                    <div class="boxlevelUp"></div>
+                                    <div class="boxlevelUp"></div>
+                                    <div class="boxlevelDown"></div>
+                                    <div class="boxlevelDown"></div>
+                                    <div class="boxlevelDown"></div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="cardTech tech">
-                    <div><img src="./assets/cssIcon.png" alt=""></div>
-                    <div class="Levels">
-                        <p>Css</p>
-                        <div class="spaceLevels">
-                            <div class="boxlevelUp"></div>
-                            <div class="boxlevelUp"></div>
-                            <div class="boxlevelUp"></div>
-                            <div class="boxlevelUp"></div>
-                            <div class="boxlevelDown"></div>
+                <div>
+                    <div>
+                        <h2 class="subHabilities">Bases de datos</h2>
+                    </div>
+                    <div class="cardTechSection">
+                        <div class="cardTech tech">
+                            <div><img src="./assets/mongodbIcon.png" alt=""></div>
+                            <div class="Levels">
+                                <p>MongoDB</p>
+                                <div class="spaceLevels">
+                                    <div class="boxlevelUp"></div>
+                                    <div class="boxlevelUp"></div>
+                                    <div class="boxlevelUp"></div>
+                                    <div class="boxlevelDown"></div>
+                                    <div class="boxlevelDown"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cardTech tech">
+                            <div><img src="./assets/sqlIcon.png" alt=""></div>
+                            <div class="Levels">
+                                <p>MySQL</p>
+                                <div class="spaceLevels">
+                                    <div class="boxlevelUp"></div>
+                                    <div class="boxlevelUp"></div>
+                                    <div class="boxlevelDown"></div>
+                                    <div class="boxlevelDown"></div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="cardTech tech">
-                    <div><img src="./assets/jsIcon.png" alt=""></div>
-                    <div class="Levels">
-                        <p>JavaScript</p>
-                        <div class="spaceLevels">
-                            <div class="boxlevelUp"></div>
-                            <div class="boxlevelUp"></div>
-                            <div class="boxlevelUp"></div>
-                            <div class="boxlevelUp"></div>
-                            <div class="boxlevelDown"></div>
+                <div>
+                    <div>
+                        <h2 class="subHabilities">Control de versiones</h2>
+                    </div>
+                    <div class="cardTechSection">
+                        <div class="cardTech tech">
+                            <div><img src="./assets/githubIcon.png" alt=""></div>
+                            <div class="Levels">
+                                <p>Git</p>
+                                <div class="spaceLevels">
+                                    <div class="boxlevelUp"></div>
+                                    <div class="boxlevelUp"></div>
+                                    <div class="boxlevelUp"></div>
+                                    <div class="boxlevelUp"></div>
+                                    <div class="boxlevelDown"></div>
+                                </div>
+                            </div>
                         </div>
+                        <div class="cardTech emptyBox"></div>
+                        <div class="cardTech emptyBox"></div>
                     </div>
                 </div>
-                <div class="cardTech tech">
-                    <div><img src="./assets/pythonIcon.png" alt=""></div>
-                    <div class="Levels">
-                        <p>Python</p>
-                        <div class="spaceLevels">
-                            <div class="boxlevelUp"></div>
-                            <div class="boxlevelUp"></div>
-                            <div class="boxlevelUp"></div>
-                            <div class="boxlevelDown"></div>
-                            <div class="boxlevelDown"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="cardTech tech">
-                    <div><img src="./assets/javaIcon.png" alt=""></div>
-                    <div class="Levels">
-                        <p>Java</p>
-                        <div class="spaceLevels">
-                            <div class="boxlevelUp"></div>
-                            <div class="boxlevelUp"></div>
-                            <div class="boxlevelUp"></div>
-                            <div class="boxlevelDown"></div>
-                            <div class="boxlevelDown"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="cardTech emptyBox"></div>
-            </div>
-            <div>
-                <h2 class="subHabilities">Herramientas de desarrollo</h2>
-            </div>
-            <div class="cardTechSection">
-                <div class="cardTech tech">
-                    <div><img src="./assets/angularIcon.png" alt=""></div>
-                    <div class="Levels">
-                        <p>Angular</p>
-                        <div class="spaceLevels">
-                            <div class="boxlevelUp"></div>
-                            <div class="boxlevelUp"></div>
-                            <div class="boxlevelUp"></div>
-                            <div class="boxlevelUp"></div>
-                            <div class="boxlevelDown"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="cardTech tech">
-                    <div><img src="./assets/nodejsIcon.png" alt=""></div>
-                    <div class="Levels">
-                        <p>NodeJs</p>
-                        <div class="spaceLevels">
-                            <div class="boxlevelUp"></div>
-                            <div class="boxlevelUp"></div>
-                            <div class="boxlevelUp"></div>
-                            <div class="boxlevelDown"></div>
-                            <div class="boxlevelDown"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="cardTech tech">
-                    <div><img src="./assets/expressIcon.png" alt=""></div>
-                    <div class="Levels">
-                        <p>Express</p>
-                        <div class="spaceLevels">
-                            <div class="boxlevelUp"></div>
-                            <div class="boxlevelUp"></div>
-                            <div class="boxlevelDown"></div>
-                            <div class="boxlevelDown"></div>
-                            <div class="boxlevelDown"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div>
-                <h2 class="subHabilities">Bases de datos</h2>
-            </div>
-            <div class="cardTechSection">
-                <div class="cardTech tech">
-                    <div><img src="./assets/mongodbIcon.png" alt=""></div>
-                    <div class="Levels">
-                        <p>MongoDB</p>
-                        <div class="spaceLevels">
-                            <div class="boxlevelUp"></div>
-                            <div class="boxlevelUp"></div>
-                            <div class="boxlevelUp"></div>
-                            <div class="boxlevelDown"></div>
-                            <div class="boxlevelDown"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="cardTech emptyBox"></div>
-                <div class="cardTech emptyBox"></div>
-            </div>
-            <div>
-                <h2 class="subHabilities">Control de versiones</h2>
-            </div>
-            <div class="cardTechSection">
-                <div class="cardTech tech">
-                    <div><img src="./assets/githubIcon.png" alt=""></div>
-                    <div class="Levels">
-                        <p>Git</p>
-                        <div class="spaceLevels">
-                            <div class="boxlevelUp"></div>
-                            <div class="boxlevelUp"></div>
-                            <div class="boxlevelUp"></div>
-                            <div class="boxlevelUp"></div>
-                            <div class="boxlevelDown"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="cardTech emptyBox"></div>
-                <div class="cardTech emptyBox"></div>
             </div>
         </section>
         <section class="Habilities">
@@ -402,7 +421,7 @@
                 <h2>Participaciones</h2>
             </div>
             <div class="cardTechSectionPort">
-                <a onclick="modalsOpen('ICPC')" class="cardPort parti">
+                <a onclick="modalsOpen('ICPC', 'BoxICPC')" class="cardPort parti">
                     <div class="preview">
                         <img src="./assets/ICPC.png" alt="">
                     </div>

@@ -60,27 +60,23 @@ sr.reveal('.parti', {
 
 });
 
-var contador = 0;
+var contador = false;
 
 function clickNavbarCellphone(){
     let nav = document.getElementById('nav')
-    let buttons = document.getElementById('buttonsNavBar')
+    if(contador == false){
+        contador=true;
+        nav.style.display = "flex"
+        nav.style.animation = "rightNav .6s ease"
+        nav.style.transform = "translateX(0px)"
+    }else if(contador == true){
+        contador=false;
+        nav.style.animation = "leftNav .6s ease"
+        setTimeout(() => {
+            nav.style.display = "none"
 
+        }, 500);
 
-    if(contador == 0){
-        nav.style.boxShadow = "0 0 10px 2px rgba(255, 255, 255, 0.8)"
-        nav.style.transform = 'translateX(0)'
-        nav.style.transition = 'transform 1s ease'
-        buttons.style.opacity = '1';
-        buttons.style.transition = 'opacity 1s ease'
-        contador=1;
-    }else{
-        nav.style.boxShadow = "none"
-        buttons.style.opacity = '0';
-        buttons.style.transition = 'opacity 1s ease'
-        nav.style.transform = 'translateX(-300px)'
-        nav.style.transition = 'transform 1s ease'
-        contador=0;
     }
 }
 
