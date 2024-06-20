@@ -190,7 +190,8 @@ p{
 .ContentAllHabilities{
     display: grid;
     gap: 30px;
-    grid-template-columns:  repeat(auto-fill, minmax(280px, 1fr));
+    padding: 0 30px;
+    grid-template-columns:  repeat(auto-fill, minmax(290px, 1fr));
 }
 .Habilities{
     width: 90%;
@@ -224,6 +225,14 @@ p{
     gap: 30px;
     padding: 5px 0;
 }
+
+
+.contentHabilities{
+    box-shadow:6px 6px 0px -2px rgba(255, 255, 255, 0.8);
+    padding: 20px; 
+    border-radius: 15px; 
+}
+
 .cardTech{
     box-shadow: 0 0 10px 2px rgba(255, 255, 255, 0.8);
     height: clamp(140px, 30vw, 180px);
@@ -466,5 +475,8 @@ p{
     }
     .cardTechSection{
         grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    }
+    .ContentAllHabilities{
+        padding: 0;
     }
   }
