@@ -113,11 +113,11 @@ nav {
 
 .buttonLink {
     border-radius: 15px;
-    border: 2px var(--w) solid;
     padding: 10px;
-    text-align: center;
+    text-align: left;
     width: 150px;
     text-decoration: none;
+    border: 2px transparent solid;
     transition: all .2s ease-in-out;
     font-weight: 600;
 }
