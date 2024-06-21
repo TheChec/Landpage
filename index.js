@@ -40,7 +40,7 @@ sr.reveal('.linksApps', {
 })
 sr.reveal('.tech', {
     duration: 2000,
-    origin: 'right',
+    origin: 'top',
     distance: '-150px',
     reset: true,
 

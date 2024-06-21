@@ -248,22 +248,13 @@ p{
     overflow: hidden;
     box-sizing: border-box;
     transition: box-shadow .2s ease;
+    background-color: var(--b1);
 }
 
 .cardTech:hover{
     border: 2px var(--w) solid;
     box-shadow: 0 0 10px 10px rgba(255, 255, 255, 0.8);
     transition: box-shadow .2s ease;
-}
-.emptyBox{
-    box-shadow: none;
-    border: none;
-    transition: none;
-}
-.emptyBox:hover{
-    box-shadow: none;
-    border: none;
-    transition: none;
 }
 .cardTech img{
     width: clamp(50px, 6vw, 75px);
