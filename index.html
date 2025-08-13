@@ -5,15 +5,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./normalize.css" type="text/css">
-    <link rel="stylesheet" href="./index.css" type="text/css" >
-    <link rel="icon" type="image/x-icon" href="./assets/104942937.jpeg" >
+    <link rel="stylesheet" href="./index.css" type="text/css">
+    <link rel="icon" type="image/x-icon" href="./assets/104942937.jpeg">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <script src="./imports/scrollreveal.js"></script>
     <title>Portafolio</title>
 </head>
 
 <body>
-    <div class="boxModal" id="ICPC" onclick="modalsClose('ICPC', 'BoxICPC')" >
+    <div class="boxModal" id="ICPC" onclick="modalsClose('ICPC', 'BoxICPC')">
         <div class="Modal" id="BoxICPC">
             <div class="Close">
                 <span onclick="modalsClose('ICPC', 'BoxICPC')" class="material-symbols-outlined">close</span>
@@ -22,16 +22,74 @@
             <img class="Certified" src="./assets/CertificadoICPC.PNG" alt="">
         </div>
     </div>
+    <div class="boxModal" id="Contabot" onclick="modalsClose('Contabot', 'BoxContabot')">
+        <div class="Modal" id="BoxContabot">
+            <div class="Close">
+                <span onclick="modalsClose('Contabot', 'BoxContabot')" class="material-symbols-outlined">close</span>
+            </div>
+            <h2>Contabot</h2>
+            <video src="./assets/contabotuto.mp4" type="video/mp4" autoplay="true" muted="true" loop="true"></video>
+            <p>Un sistema contable que automatiza el acuse de recibo de facturas electrónicas y la
+                causación de facturas de compra. Además, incluye módulos para la gestión de empleados,
+                clientes y administración de permisos dentro de la aplicación.</p>
+            <h3>Tecnologías</h3>
+            <div class="techIconInProjects">
+                <img src="./assets/postgresql.png" alt="">
+                <img src="./assets/expressIcon.png" alt="">
+                <img src="./assets/angularIcon.png" alt="">
+                <img src="./assets/nodejsIcon.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="boxModal" id="Kuva" onclick="modalsClose('Kuva', 'BoxKuva')">
+        <div class="Modal" id="BoxKuva">
+            <div class="Close">
+                <span onclick="modalsClose('Kuva', 'BoxKuva')" class="material-symbols-outlined">close</span>
+            </div>
+            <h2>Kuva</h2>
+            <video src="./assets/kuvatutorial.mp4" type="video/mp4" autoplay="true" muted="true" loop="true"></video>
+            <a href="https://agenda-kuva.vercel.app/">Enlace a la pagina aquí</a>
+            <p>Una plataforma para cotizar, registrar y monitorear eventos además de tener un modulo para organizar
+                empleados, clientes, empresas, redes sociales y demás cosas.</p>
+            <h3>Tecnologías</h3>
+            <div class="techIconInProjects">
+                <img src="./assets/sqlIcon.png" alt="">
+                <img src="./assets/expressIcon.png" alt="">
+                <img src="./assets/React-icon.svg.png" alt="">
+                <img src="./assets/nodejsIcon.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="boxModal" id="Artesana" onclick="modalsClose('Artesana', 'BoxArtesana')">
+        <div class="Modal" id="BoxArtesana">
+            <div class="Close">
+                <span onclick="modalsClose('Artesana', 'BoxArtesana')" class="material-symbols-outlined">close</span>
+            </div>
+            <h2>Artesana</h2>
+            <video src="./assets/artesanatuto.mp4" type="video/mp4" autoplay="true" muted="true" loop="true"></video>
+            <a href="https://hanannd1.github.io/Artesana/index.html">Enlace a la pagina aquí</a>
+            <p>Este catálogo fue diseñado para una clienta que buscaba reunir todos sus proyectos de crochet en un solo
+                lugar.
+                Se organizó el contenido por categorías, separando cada tipo de producto para facilitar su visualización
+                y acceso.</p>
+            <h3>Tecnologías</h3>
+            <div class="techIconInProjects">
+                <img src="./assets/htmlIcon.png" alt="">
+                <img src="./assets/cssIcon.png" alt="">
+                <img src="./assets/jsIcon.png" alt="">
+            </div>
+        </div>
+    </div>
     <div class="boxModal" id="PoliNet" onclick="modalsClose('PoliNet', 'BoxPolinet')">
         <div class="Modal" id="BoxPolinet">
             <div class="Close">
                 <span onclick="modalsClose('PoliNet', 'BoxPolinet')" class="material-symbols-outlined">close</span>
             </div>
             <h2>PoliNet</h2>
-            <video src="./assets/polinet-preview.mp4" type="video/mp4" autoplay="true" muted="true"
-            loop="true"></video>
+            <video src="./assets/polinet-preview.mp4" type="video/mp4" autoplay="true" muted="true" loop="true"></video>
             <a href="https://polinet.vercel.app/">Enlace a la pagina aquí</a>
-            <p>Proyecto orientado para emprendedores, mentores y usuarios del común. Es una red social donde se puede publicar, reaccionar e interectuar con otros.</p>
+            <p>Proyecto orientado para emprendedores, mentores y usuarios del común. Es una red social donde se puede
+                publicar, reaccionar e interectuar con otros.</p>
             <h3>Tecnologías</h3>
             <div class="techIconInProjects">
                 <img src="./assets/mongodbIcon.png" alt="">
@@ -48,8 +106,9 @@
             </div>
             <h2>CreditCar</h2>
             <video src="./assets/creditcar-preview.mp4" type="video/mp4" autoplay="true" muted="true"
-            loop="true"></video>
-            <p>Una plataforma en EE. UU. permite a concesionarios publicar vehículos y a usuarios registrados verificar su elegibilidad para financiación y encontrar concesionarios con mejor afinidad financiera.</p>
+                loop="true"></video>
+            <p>Una plataforma en EE. UU. permite a concesionarios publicar vehículos y a usuarios registrados verificar
+                su elegibilidad para financiación y encontrar concesionarios con mejor afinidad financiera.</p>
             <h3>Tecnologías</h3>
             <div class="techIconInProjects">
                 <img src="./assets/mongodbIcon.png" alt="">
@@ -62,13 +121,15 @@
     <div class="boxModal" id="Algebraic-Showdown" onclick="modalsClose('Algebraic-Showdown', 'BoxAlgebraic-Showdown')">
         <div class="Modal" id="BoxAlgebraic-Showdown">
             <div class="Close">
-                <span onclick="modalsClose('Algebraic-Showdown', 'BoxAlgebraic-Showdown')" class="material-symbols-outlined">close</span>
+                <span onclick="modalsClose('Algebraic-Showdown', 'BoxAlgebraic-Showdown')"
+                    class="material-symbols-outlined">close</span>
             </div>
             <h2>Algebraic-Showdown</h2>
             <video src="./assets/algebraic-showdown-preview.mp4" type="video/mp4" autoplay="true" muted="true"
-            loop="true"></video>
+                loop="true"></video>
             <a href="https://thechec.github.io/Algebraic-Showdown/">Enlace a la pagina aquí</a>
-            <p>Juego de Algebra lineal combinado con piedra papel y tijera, en el que tendras que solucionar matrices por metodos como el de Sarrus y Cramer.</p>
+            <p>Juego de Algebra lineal combinado con piedra papel y tijera, en el que tendras que solucionar matrices
+                por metodos como el de Sarrus y Cramer.</p>
             <h3>Tecnologías</h3>
             <div class="techIconInProjects">
                 <img src="./assets/htmlIcon.png" alt="">
@@ -84,9 +145,10 @@
             </div>
             <h2>ResisTool</h2>
             <video src="./assets/resistool-preview.mp4" type="video/mp4" autoplay="true" muted="true"
-            loop="true"></video>
+                loop="true"></video>
             <a href="https://thechec.github.io/ResisTool/">Enlace a la pagina aquí</a>
-            <p>Esta calculadora está diseñada para ayudarte a determinar la resistencia total y la capacitancia total en circuitos en serie y paralelo, facilitando el diseño y análisis de tus circuitos eléctricos.</p>
+            <p>Esta calculadora está diseñada para ayudarte a determinar la resistencia total y la capacitancia total en
+                circuitos en serie y paralelo, facilitando el diseño y análisis de tus circuitos eléctricos.</p>
             <h3>Tecnologías</h3>
             <div class="techIconInProjects">
                 <img src="./assets/htmlIcon.png" alt="">
@@ -98,13 +160,15 @@
     <div class="boxModal" id="Instalamos" onclick="modalsClose('Instalamos', 'BoxInstalamos')">
         <div class="Modal" id="BoxInstalamos">
             <div class="Close">
-                <span onclick="modalsClose('Instalamos', 'BoxInstalamos')" class="material-symbols-outlined">close</span>
+                <span onclick="modalsClose('Instalamos', 'BoxInstalamos')"
+                    class="material-symbols-outlined">close</span>
             </div>
             <h2>Instalamos</h2>
             <video src="./assets/instalamosPreview.mp4" type="video/mp4" autoplay="true" muted="true"
-            loop="true"></video>
+                loop="true"></video>
             <a href="https://thechec.github.io/Instalamos/">Enlace a la pagina aquí</a>
-            <p>Landpage para la empresa de Instalamos, empresa de construcción y decoración de interiores. En la pagina se ve su entidad
+            <p>Landpage para la empresa de Instalamos, empresa de construcción y decoración de interiores. En la pagina
+                se ve su entidad
                 empresarial, proyectos, enlaces de comunicación.</p>
             <h3>Tecnologías</h3>
             <div class="techIconInProjects">
@@ -126,7 +190,7 @@
     <nav id="nav">
         <div class="inNav">
             <img onclick="clickNavbarCellphone()" class="navigator2" id="buttonNavigator"
-        src="./assets/navigatorIconRelative.png" alt="">
+                src="./assets/navigatorIconRelative.png" alt="">
         </div>
         <div class="buttonsNav" id="buttonsNavBar">
             <a class="buttonLink" href="#start" onclick="clickNavbarCellphone()">Inicio</a>
@@ -138,7 +202,7 @@
     <section class="portada" id="start">
         <h1 class="titles">Sergio Calderon</h1>
         <h3 class="titles">Desarrollador de software</h3>
-        <p  class="titles">Soy un programador, autodidacta, empatico y cooperador.</p>
+        <p class="titles">Soy un programador, autodidacta, empatico y cooperador.</p>
         <div class="linksApps" class="titles">
             <img src="./assets/githubIcon.png" alt="">
             <a href="https://github.com/TheChec">Github</a>
@@ -151,12 +215,67 @@
             <div class="Habilities-title" id="habilities">
                 <h2>Habilidades</h2>
             </div>
+            <div>
+                <h2 class="subHabilities_definition">Definición de niveles</h2>
+            </div>
+            <div class="definitions">
+
+                <div class="spaceLevels_definition">
+                    <div class="capsule_definition">
+                        <div class="boxlevelUp_definition"></div>
+                        <p>Conozco lo básico, puedo entender conceptos y hacer ajustes simples.</p>
+                    </div>
+                    <div class="capsule_definition">
+                        <div class="boxlevelUp_definition"></div>
+                        <p>Manejo tareas sencillas con ayuda de documentación.</p>
+                    </div>
+                    <div class="capsule_definition">
+                        <div class="boxlevelUp_definition"></div>
+                        <p>Trabajo de forma autónoma en partes de un proyecto y aplico buenas prácticas básicas.</p>
+                    </div>
+                    <div class="capsule_definition">
+                        <div class="boxlevelUp_definition"></div>
+                        <p>Desarrollo proyectos completos de forma independiente y optimizo mi código.</p>
+                    </div>
+                    <div class="capsule_definition">
+                        <div class="boxlevelUp_definition"></div>
+                        <p>Domino la tecnología y resuelvo problemas complejos con rapidez.</p>
+                    </div>
+                </div>
+            </div>
             <div class="ContentAllHabilities">
-                <div class="contentHabilities" >
+                <div class="contentHabilities">
                     <div>
                         <h2 class="subHabilities">Teconologías</h2>
                     </div>
                     <div class="cardTechSection">
+
+                        <div class="cardTech tech">
+                            <div><img src="./assets/jsIcon.png" alt=""></div>
+                            <div class="Levels">
+                                <p>JavaScript</p>
+                                <div class="spaceLevels">
+                                    <div class="boxlevelUp"></div>
+                                    <div class="boxlevelUp"></div>
+                                    <div class="boxlevelUp"></div>
+                                    <div class="boxlevelUp"></div>
+                                    <div class="boxlevelDown"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cardTech tech">
+                            <div><img src="./assets/typescript.png" alt=""></div>
+                            <div class="Levels">
+                                <p>TypeScript</p>
+                                <div class="spaceLevels">
+                                    <div class="boxlevelUp"></div>
+                                    <div class="boxlevelUp"></div>
+                                    <div class="boxlevelUp"></div>
+                                    <div class="boxlevelUp"></div>
+                                    <div class="boxlevelDown"></div>
+                                </div>
+                            </div>
+                        </div>
                         <div class="cardTech tech">
                             <div><img src="./assets/htmlIcon.png" alt=""></div>
                             <div class="Levels">
@@ -184,9 +303,9 @@
                             </div>
                         </div>
                         <div class="cardTech tech">
-                            <div><img src="./assets/jsIcon.png" alt=""></div>
+                            <div><img src="./assets/visual-basic_icon.jpg" alt=""></div>
                             <div class="Levels">
-                                <p>JavaScript</p>
+                                <p>Visual Basic</p>
                                 <div class="spaceLevels">
                                     <div class="boxlevelUp"></div>
                                     <div class="boxlevelUp"></div>
@@ -209,6 +328,7 @@
                                 </div>
                             </div>
                         </div>
+
                         <div class="cardTech tech">
                             <div><img src="./assets/javaIcon.png" alt=""></div>
                             <div class="Levels">
@@ -222,9 +342,10 @@
                                 </div>
                             </div>
                         </div>
+
                     </div>
                 </div>
-                <div class="contentHabilities" >
+                <div class="contentHabilities">
                     <div>
                         <h2 class="subHabilities">Frameworks</h2>
                     </div>
@@ -250,27 +371,27 @@
                                     <div class="boxlevelUp"></div>
                                     <div class="boxlevelUp"></div>
                                     <div class="boxlevelUp"></div>
-                                    <div class="boxlevelDown"></div>
+                                    <div class="boxlevelUp"></div>
                                     <div class="boxlevelDown"></div>
                                 </div>
                             </div>
                         </div>
                         <div class="cardTech tech">
-                            <div><img src="./assets/expressIcon.png" alt=""></div>
+                            <div><img src="./assets/React-icon.svg.png" alt=""></div>
                             <div class="Levels">
-                                <p>Express</p>
+                                <p>React</p>
                                 <div class="spaceLevels">
                                     <div class="boxlevelUp"></div>
                                     <div class="boxlevelUp"></div>
-                                    <div class="boxlevelDown"></div>
+                                    <div class="boxlevelUp"></div>
                                     <div class="boxlevelDown"></div>
                                     <div class="boxlevelDown"></div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div >
-                <div class="contentHabilities" >
+                </div>
+                <div class="contentHabilities">
                     <div>
                         <h2 class="subHabilities">Bases de datos</h2>
                     </div>
@@ -289,24 +410,65 @@
                             </div>
                         </div>
                         <div class="cardTech tech">
+                            <div><img src="./assets/postgresql.png" alt=""></div>
+                            <div class="Levels">
+                                <p>PostgreSQL</p>
+                                <div class="spaceLevels">
+                                    <div class="boxlevelUp"></div>
+                                    <div class="boxlevelUp"></div>
+                                    <div class="boxlevelUp"></div>
+                                    <div class="boxlevelUp"></div>
+                                    <div class="boxlevelDown"></div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cardTech tech">
                             <div><img src="./assets/sqlIcon.png" alt=""></div>
                             <div class="Levels">
                                 <p>MySQL</p>
                                 <div class="spaceLevels">
                                     <div class="boxlevelUp"></div>
                                     <div class="boxlevelUp"></div>
-                                    <div class="boxlevelDown"></div>
+                                    <div class="boxlevelUp"></div>
+                                    <div class="boxlevelUp"></div>
                                     <div class="boxlevelDown"></div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="contentHabilities" >
+                <div class="contentHabilities">
                     <div>
-                        <h2 class="subHabilities">Control de versiones</h2>
+                        <h2 class="subHabilities">Herramientas</h2>
                     </div>
                     <div class="cardTechSection">
+                        <div class="cardTech tech">
+                            <div><img src="./assets/uipath.png" alt=""></div>
+                            <div class="Levels">
+                                <p>UiPath</p>
+                                <div class="spaceLevels">
+                                    <div class="boxlevelUp"></div>
+                                    <div class="boxlevelUp"></div>
+                                    <div class="boxlevelUp"></div>
+                                    <div class="boxlevelUp"></div>
+                                    <div class="boxlevelDown"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cardTech tech">
+                            <div><img src="./assets/postman-icon.png" alt=""></div>
+                            <div class="Levels">
+                                <p>Postman</p>
+                                <div class="spaceLevels">
+                                    <div class="boxlevelUp"></div>
+                                    <div class="boxlevelUp"></div>
+                                    <div class="boxlevelUp"></div>
+                                    <div class="boxlevelUp"></div>
+                                    <div class="boxlevelDown"></div>
+                                </div>
+                            </div>
+                        </div>
                         <div class="cardTech tech">
                             <div><img src="./assets/githubIcon.png" alt=""></div>
                             <div class="Levels">
@@ -316,6 +478,19 @@
                                     <div class="boxlevelUp"></div>
                                     <div class="boxlevelUp"></div>
                                     <div class="boxlevelUp"></div>
+                                    <div class="boxlevelDown"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cardTech tech">
+                            <div><img src="./assets/power-bi-icon.png" alt=""></div>
+                            <div class="Levels">
+                                <p>PowerBl</p>
+                                <div class="spaceLevels">
+                                    <div class="boxlevelUp"></div>
+                                    <div class="boxlevelUp"></div>
+                                    <div class="boxlevelDown"></div>
+                                    <div class="boxlevelDown"></div>
                                     <div class="boxlevelDown"></div>
                                 </div>
                             </div>
@@ -332,6 +507,39 @@
                 <h2 class="subHabilities">Proyectos destacables</h2>
             </div>
             <div class="cardTechSectionPort">
+                <a onclick="modalsOpen('Artesana', 'BoxArtesana')" class="cardPort port">
+                    <div class="preview">
+                        <img src="./assets/logoArtesanaRedondo.png" alt="">
+                    </div>
+                    <div>
+                        <h3>Artesana</h3>
+                        <p>Este catálogo fue diseñado para una clienta que buscaba reunir todos sus proyectos de crochet
+                            en un solo lugar.
+                            Se organizó el contenido por categorías, separando cada tipo de producto para facilitar su
+                            visualización y acceso.</p>
+                        <div class="techIconInProjects">
+                            <img src="./assets/htmlIcon.png" alt="">
+                            <img src="./assets/cssIcon.png" alt="">
+                            <img src="./assets/jsIcon.png" alt="">
+                        </div>
+                    </div>
+                </a>
+                <a onclick="modalsOpen('Instalamos', 'BoxInstalamos')" class="cardPort port">
+                    <div class="preview">
+                        <img src="./assets/instalamosLogo.png" alt="">
+                    </div>
+                    <div>
+                        <h3>Instalamos</h3>
+                        <p>Landpage para la empresa de Instalamos, empresa de construcción y decoración de interiores.
+                            En la pagina se ve su entidad
+                            empresarial, proyectos, enlaces de comunicación.</p>
+                        <div class="techIconInProjects">
+                            <img src="./assets/htmlIcon.png" alt="">
+                            <img src="./assets/cssIcon.png" alt="">
+                            <img src="./assets/jsIcon.png" alt="">
+                        </div>
+                    </div>
+                </a>
                 <a onclick="modalsOpen('PoliNet', 'BoxPolinet')" class="cardPort port">
                     <div class="preview">
                         <img src="./assets/logoPolinet.png" alt="">
@@ -344,6 +552,73 @@
                             <img src="./assets/mongodbIcon.png" alt="">
                             <img src="./assets/expressIcon.png" alt="">
                             <img src="./assets/angularIcon.png" alt="">
+                            <img src="./assets/nodejsIcon.png" alt="">
+                        </div>
+                    </div>
+                </a>
+                <a onclick="modalsOpen('ResisTool', 'BoxResisTool')" class="cardPort port">
+                    <div class="preview">
+                        <img src="./assets/resistence_logo.png" alt="">
+                    </div>
+                    <div>
+                        <h3>ResisTool</h3>
+                        <p>Esta calculadora está diseñada para ayudarte a determinar la resistencia total y la
+                            capacitancia total en circuitos en serie y paralelo, facilitando el diseño y análisis de tus
+                            circuitos eléctricos.</p>
+                        <div class="techIconInProjects">
+                            <img src="./assets/htmlIcon.png" alt="">
+                            <img src="./assets/cssIcon.png" alt="">
+                            <img src="./assets/jsIcon.png" alt="">
+                        </div>
+                    </div>
+                </a>
+                <a onclick="modalsOpen('Algebraic-Showdown', 'BoxAlgebraic-Showdown')" class="cardPort port">
+                    <div class="preview">
+                        <img src="./assets/Hand-scissor.svg" alt="">
+                    </div>
+                    <div>
+                        <h3>Algebraic-Showdown</h3>
+                        <p>Juego de Algebra lineal combinado con piedra papel y tijera, en el que tendras que solucionar
+                            matrices por metodos como el de Sarrus y Cramer.</p>
+                        <div class="techIconInProjects">
+                            <img src="./assets/htmlIcon.png" alt="">
+                            <img src="./assets/cssIcon.png" alt="">
+                            <img src="./assets/jsIcon.png" alt="">
+                        </div>
+                    </div>
+                </a>
+                <a onclick="modalsOpen('Contabot', 'BoxContabot')" class="cardPort port">
+                    <div class="preview">
+                        <img src="./assets/contaboticon.jpeg" alt="">
+                    </div>
+                    <div>
+                        <h3>Contabot</h3>
+                        <p>
+                            Un sistema contable que automatiza el acuse de recibo de facturas electrónicas y la
+                            causación de facturas de compra. Además, incluye módulos para la gestión de empleados,
+                            clientes y administración de permisos dentro de la aplicación.
+                        </p>
+
+                        <div class="techIconInProjects">
+                            <img src="./assets/postgresql.png" alt="">
+                            <img src="./assets/expressIcon.png" alt="">
+                            <img src="./assets/angularIcon.png" alt="">
+                            <img src="./assets/nodejsIcon.png" alt="">
+                        </div>
+                    </div>
+                </a>
+                <a onclick="modalsOpen('Kuva', 'BoxKuva')" class="cardPort port">
+                    <div class="preview">
+                        <img src="./assets/React-icon.svg.png" alt="">
+                    </div>
+                    <div>
+                        <h3>Kuva</h3>
+                        <p>Una plataforma para cotizar, registrar y monitorear eventos además de tener un modulo para
+                            organizar empleados, clientes, empresas, redes sociales y demás cosas.</p>
+                        <div class="techIconInProjects">
+                            <img src="./assets/sqlIcon.png" alt="">
+                            <img src="./assets/expressIcon.png" alt="">
+                            <img src="./assets/React-icon.svg.png" alt="">
                             <img src="./assets/nodejsIcon.png" alt="">
                         </div>
                     </div>
@@ -365,52 +640,7 @@
                         </div>
                     </div>
                 </a>
-                <a onclick="modalsOpen('Algebraic-Showdown', 'BoxAlgebraic-Showdown')" class="cardPort port">
-                    <div class="preview">
-                        <img src="./assets/Hand-scissor.svg" alt="">
-                    </div>
-                    <div>
-                        <h3>Algebraic-Showdown</h3>
-                        <p>Juego de Algebra lineal combinado con piedra papel y tijera, en el que tendras que solucionar
-                            matrices por metodos como el de Sarrus y Cramer.</p>
-                        <div class="techIconInProjects">
-                            <img src="./assets/htmlIcon.png" alt="">
-                            <img src="./assets/cssIcon.png" alt="">
-                            <img src="./assets/jsIcon.png" alt="">
-                        </div>
-                    </div>
-                </a>
-                <a onclick="modalsOpen('ResisTool', 'BoxResisTool')" class="cardPort port">
-                    <div class="preview">
-                        <img src="./assets/resistence_logo.png" alt="">
-                    </div>
-                    <div>
-                        <h3>ResisTool</h3>
-                        <p>Esta calculadora está diseñada para ayudarte a determinar la resistencia total y la
-                            capacitancia total en circuitos en serie y paralelo, facilitando el diseño y análisis de tus
-                            circuitos eléctricos.</p>
-                        <div class="techIconInProjects">
-                            <img src="./assets/htmlIcon.png" alt="">
-                            <img src="./assets/cssIcon.png" alt="">
-                            <img src="./assets/jsIcon.png" alt="">
-                        </div>
-                    </div>
-                </a>
-                <a onclick="modalsOpen('Instalamos', 'BoxInstalamos')" class="cardPort port">
-                    <div class="preview">
-                        <img src="./assets/instalamosLogo.png" alt="">
-                    </div>
-                    <div>
-                        <h3>Instalamos</h3>
-                        <p>Landpage para la empresa de Instalamos, empresa de construcción y decoración de interiores. En la pagina se ve su entidad
-                            empresarial, proyectos, enlaces de comunicación.</p>
-                        <div class="techIconInProjects">
-                            <img src="./assets/htmlIcon.png" alt="">
-                            <img src="./assets/cssIcon.png" alt="">
-                            <img src="./assets/jsIcon.png" alt="">
-                        </div>
-                    </div>
-                </a>
+
             </div>
         </section>
         <section class="Habilities">
@@ -425,7 +655,8 @@
                     <div>
                         <h3>ICPC - 2021</h3>
                         <p>Maraton nacional de programación en representación
-                            <br> del Politécnico Grancolombiano</p>
+                            <br> del Politécnico Grancolombiano
+                        </p>
                     </div>
                 </a>
                 <a class="cardPort parti" style="cursor:initial ;">
@@ -443,4 +674,5 @@
     </main>
 </body>
 <script src="./index.js"></script>
+
 </html>
