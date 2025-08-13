@@ -164,6 +164,8 @@ nav {
 h2{
 	text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
 }
+
+
 p{
     margin: 0;
 }
@@ -182,7 +184,7 @@ p{
     margin: 0 10px;
 }
 .portada p{
-    width: 500px;
+    width: 60%;
     text-align: center;
     line-height: 30px;
 }
@@ -201,6 +203,7 @@ p{
     justify-content: center;
     flex-direction: column;
     padding: 25px;
+    gap: 30px;
     margin: 10px auto 0 auto;
 }
 
