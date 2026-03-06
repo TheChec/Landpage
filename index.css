@@ -519,8 +519,9 @@ p{
 }
 
 .boxlevelUp_definition{
-    width: clamp(12px, 2vw, 15px);
-    height: clamp(12px, 2vw, 15px);
     background-color: var(--c2);
     border-radius: 5px;
+    font-size: 30px;
+    padding: 5px;
+    font-weight: bold;
 }
