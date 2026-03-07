@@ -350,7 +350,7 @@ p{
 .Modal{
     border-radius: 15px;
     background-color: var(--w);
-    width: clamp(350px, 40vw, 600px);
+    width: clamp(350px, 80vw, 600px);
     height: fit-content;
     display: flex;
     flex-direction: column;
@@ -392,6 +392,12 @@ p{
 }
 .openModal{
     display: flex;
+}
+#modalImage{
+    margin: 0 60px;
+    border-radius: 25px;
+    width: clamp(310px,50vw,500px);
+    display: none;
 }
 @keyframes rightNav {
     0%{
@@ -466,6 +472,7 @@ p{
     .Modal p{
         display: block;
         margin: 20px 0 10px 0;
+        width: 80%;
     }
     .navCel{
         background-color: var(--b1);

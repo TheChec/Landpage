@@ -80,25 +80,118 @@ function clickNavbarCellphone(){
     }
 }
 
-function modalsOpen(id, idBoxModal){
-    let modals = document.querySelectorAll(`#${id}`);
-    let modalsAnimation = document.querySelectorAll(`#${idBoxModal}`);
-    modals.forEach(modal => {
-        modal.classList.add('openModal');
-    })
-    modalsAnimation.forEach(modal => {
-        modal.style.animation = 'UpModal 1s ease';
-    })
+
+
+let projects = [];
+
+fetch("./projects/projects.json")
+.then(res => res.json())
+.then(data => {
+
+    projects = data.projects;
+
+    document.querySelectorAll(".openProject").forEach(card => {
+
+        card.addEventListener("click", () => {
+
+            const id = card.dataset.id;
+            openModal(id);
+
+        });
+
+    });
+
+});
+
+function openModal(id){
+
+    const project = projects.find(p => p.id === id);
+    if(!project) return;
+
+    const modal = document.getElementById("modal");
+    const modalBox = modal.querySelector(".Modal");
+
+    const techH3 = modalBox.querySelector("#techH3");
+    const modalTitle = document.getElementById("modalTitle");
+    const modalVideo = document.getElementById("modalVideo");
+    const modalImage = document.getElementById("modalImage");
+    const modalDescription = document.getElementById("modalDescription");
+    const modalLink = document.getElementById("modalLink");
+    const modalTech = document.getElementById("modalTech");
+
+    modalTitle.textContent = project.title || "";
+
+    if(project.video){
+        modalVideo.src = project.video;
+        modalVideo.style.display = "block";
+        modalImage.style.display = "none";
+        modalVideo.currentTime = 0;
+    }else if(project.image){
+        modalImage.src = project.image;
+        modalImage.style.display = "block";
+        modalVideo.style.display = "none";
+        techH3.style.display = "none";
+
+    }else{
+        modalVideo.style.display = "none";
+        modalImage.style.display = "none";
+    }
+
+    modalDescription.textContent = project.description || "";
+
+    if(project.link){
+        modalLink.href = project.link;
+        modalLink.textContent = "Enlace a la página aquí";
+        modalLink.style.display = "block";
+    }else{
+        modalLink.style.display = "none";
+    }
+
+    modalTech.innerHTML = "";
+
+    if(project.technologies){
+        project.technologies.forEach(tech => {
+            const img = document.createElement("img");
+            img.src = tech;
+            modalTech.appendChild(img);
+        });
+    }
+
+    modal.classList.add("openModal");
+    modalBox.style.animation = "UpModal 0.6s ease";
 }
-function modalsClose(id, idBoxModal){
-    let modals = document.querySelectorAll(`#${id}`)
-    let modalsAnimation = document.querySelectorAll(`#${idBoxModal}`);
-    modalsAnimation.forEach(modal => {
-        modal.style.animation = 'downModal 1s ease';
-    })
-    setTimeout(() => {
-        modals.forEach(modal => {
-            modal.classList.remove('openModal');
-        })
-    },500)
+
+function closeModal(){
+
+    const modal = document.getElementById("modal");
+    const modalBox = modal.querySelector(".Modal");
+
+    modalBox.style.animation = "downModal 0.6s ease";
+
+    setTimeout(()=>{
+        modal.classList.remove("openModal");
+        document.getElementById("modalVideo").pause();
+    },500);
+
 }
+
+document.querySelectorAll(".openProject").forEach(card => {
+
+    card.addEventListener("click", () => {
+
+        const id = card.dataset.id;
+        openModal(id);
+
+    });
+
+});
+
+document.getElementById("closeModal").onclick = closeModal;
+
+document.getElementById("modal").onclick = (e)=>{
+
+    if(e.target.id === "modal"){
+        closeModal();
+    }
+
+};

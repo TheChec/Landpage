@@ -1,0 +1,134 @@
+{
+  "projects": [
+    {
+      "id": "ICPC",
+      "title": "ICPC - 2021",
+      "image": "./assets/CertificadoICPC.png",
+      "video": null,
+      "description": null,
+      "link": null,
+      "technologies": []
+    },
+    {
+      "id": "Contabot",
+      "title": "Contabot",
+      "video": "./assets/contabotuto.mp4",
+      "image": null,
+      "description": "Un sistema contable que automatiza el acuse de recibo de facturas electrónicas y la causación de facturas de compra. Además, incluye módulos para la gestión de empleados, clientes y administración de permisos dentro de la aplicación.",
+      "link": null,
+      "technologies": [
+        "./assets/postgresql.png",
+        "./assets/expressIcon.png",
+        "./assets/angularIcon.png",
+        "./assets/nodejsIcon.png"
+      ]
+    },
+    {
+      "id": "ArtesanaInsumos",
+      "title": "Artesana Insumos",
+      "video": "./assets/artesanainsumos.mp4",
+      "image": null,
+      "description": "Un catalogo de insumos para hacer tejido (Crochet), con su respectivo catalogo, carrito de compras y conexión a Whatsapp para continuar con la experiencia personalizada.",
+      "link": "https://hanannd1.github.io/artesanainsumos/index.html",
+      "technologies": [
+        "./assets/htmlIcon.png",
+        "./assets/cssIcon.png",
+        "./assets/jsIcon.png"
+      ]
+    },
+    {
+      "id": "Kuva",
+      "title": "Kuva",
+      "video": "./assets/kuvatutorial.mp4",
+      "image": null,
+      "description": "Una plataforma para cotizar, registrar y monitorear eventos además de tener un modulo para organizar empleados, clientes, empresas, redes sociales y demás cosas.",
+      "link": "https://agenda-kuva.vercel.app/",
+      "technologies": [
+        "./assets/sqlIcon.png",
+        "./assets/expressIcon.png",
+        "./assets/React-icon.svg.png",
+        "./assets/nodejsIcon.png"
+      ]
+    },
+    {
+      "id": "Artesana",
+      "title": "Artesana",
+      "video": "./assets/artesanatuto.mp4",
+      "image": null,
+      "description": "Este catálogo fue diseñado para una clienta que buscaba reunir todos sus proyectos de crochet en un solo lugar. Se organizó el contenido por categorías, separando cada tipo de producto para facilitar su visualización y acceso.",
+      "link": "https://hanannd1.github.io/Artesana/index.html",
+      "technologies": [
+        "./assets/htmlIcon.png",
+        "./assets/cssIcon.png",
+        "./assets/jsIcon.png"
+      ]
+    },
+    {
+      "id": "PoliNet",
+      "title": "PoliNet",
+      "video": "./assets/polinet-preview.mp4",
+      "image": null,
+      "description": "Proyecto orientado para emprendedores, mentores y usuarios del común. Es una red social donde se puede publicar, reaccionar e interectuar con otros.",
+      "link": "https://polinet.vercel.app/",
+      "technologies": [
+        "./assets/mongodbIcon.png",
+        "./assets/expressIcon.png",
+        "./assets/angularIcon.png",
+        "./assets/nodejsIcon.png"
+      ]
+    },
+    {
+      "id": "CreditCar",
+      "title": "CreditCar",
+      "video": "./assets/creditcar-preview.mp4",
+      "image": null,
+      "description": "Una plataforma en EE. UU. permite a concesionarios publicar vehículos y a usuarios registrados verificar su elegibilidad para financiación y encontrar concesionarios con mejor afinidad financiera.",
+      "link": null,
+      "technologies": [
+        "./assets/mongodbIcon.png",
+        "./assets/expressIcon.png",
+        "./assets/angularIcon.png",
+        "./assets/nodejsIcon.png"
+      ]
+    },
+    {
+      "id": "Algebraic-Showdown",
+      "title": "Algebraic Showdown",
+      "video": "./assets/algebraic-showdown-preview.mp4",
+      "image": null,
+      "description": "Juego de Algebra lineal combinado con piedra papel y tijera, en el que tendrás que solucionar matrices por métodos como el de Sarrus y Cramer.",
+      "link": "https://thechec.github.io/Algebraic-Showdown/",
+      "technologies": [
+        "./assets/htmlIcon.png",
+        "./assets/cssIcon.png",
+        "./assets/jsIcon.png"
+      ]
+    },
+    {
+      "id": "ResisTool",
+      "title": "ResisTool",
+      "video": "./assets/resistool-preview.mp4",
+      "image": null,
+      "description": "Esta calculadora está diseñada para ayudarte a determinar la resistencia total y la capacitancia total en circuitos en serie y paralelo, facilitando el diseño y análisis de tus circuitos eléctricos.",
+      "link": "https://thechec.github.io/ResisTool/",
+      "technologies": [
+        "./assets/htmlIcon.png",
+        "./assets/cssIcon.png",
+        "./assets/jsIcon.png"
+      ]
+    },
+    {
+      "id": "Instalamos",
+      "title": "Instalamos",
+      "video": "./assets/instalamosPreview.mp4",
+      "image": null,
+      "description": "Landpage para la empresa de Instalamos, empresa de construcción y decoración de interiores. En la pagina se ve su entidad empresarial, proyectos y enlaces de comunicación.",
+      "link": "https://thechec.github.io/Instalamos/",
+      "technologies": [
+        "./assets/htmlIcon.png",
+        "./assets/cssIcon.png",
+        "./assets/jsIcon.png"
+      ]
+    }
+  ]
+}
